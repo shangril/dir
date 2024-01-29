@@ -1,9 +1,6 @@
 The live version of the Dir is available at http://[fc71:fa3a:414d:fe82:f465:369b:141a:f8c]/dir/ for people *already connected to Hyperboria* only. 
 
-Learn how here
-
-
-The following Hyperboria HOWTO courtesy of Crem Road records, under CC BY-SA
+Learn how here - The following Hyperboria HOWTO is courtesy of Crem Road records, under CC BY-SA
 
 
 What is Hyperboria
