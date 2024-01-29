@@ -7,6 +7,7 @@ The following Hyperboria HOWTO courtesy of Crem Road records, under CC BY-SA
 
 
 What is Hyperboria
+
 Hyperboria is a virtual network, propelled by the Cjdns free software, fully end-to-end encrypted, with encryption-based addressing, used at a worldwide scale to provide to its users
 
    A secure, trusted, privacy friendly network
