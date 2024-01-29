@@ -1,0 +1,10 @@
+# script for cron, based on Ircerr work (ping no ping attempted, update list) modified by shangri-l (reping failure, reping mixed, reping success, retitle success)
+
+
+
+curl -s http://[-Enter your Hype DIR ip here and path then-]/dir/hia-parsed.php|sed 's/<hr\/>/\n/g'|grep 'No ping attempted'|sed 's/.*.\/ping.php/http:\/\/[-Enter your Hype DIR ip here and path then-]\/dir\/ping.php/g;s/">.*//g'|while read URL; do curl -s "$URL" -o /dev/null ;done
+curl -s http://[-Enter your Hype DIR ip here and path then-]/dir/hia-parsed.php|sed 's/<hr\/>/\n/g'|grep 'Failure'|sed 's/.*.\/ping.php/http:\/\/[-Enter your Hype DIR ip here and path then-]\/dir\/ping.php/g;s/">.*//g'|while read URL; do curl -s "$URL" -o /dev/null ;done
+curl -s http://[-Enter your Hype DIR ip here and path then-]/dir/hia-parsed.php|sed 's/<hr\/>/\n/g'|grep 'Mixed'|sed 's/.*.\/ping.php/http:\/\/[-Enter your Hype DIR ip here and path then-]\/dir\/ping.php/g;s/">.*//g'|while read URL; do curl -s "$URL" -o /dev/null ;done
+curl -s http://[-Enter your Hype DIR ip here and path then-]/dir/hia-parsed.php|sed 's/<hr\/>/\n/g'|grep 'Success'|sed 's/.*.\/ping.php/http:\/\/[-Enter your Hype DIR ip here and path then-]\/dir\/ping.php/g;s/">.*//g'|while read URL; do curl -s "$URL" -o /dev/null ;done
+curl -s http://[-Enter your Hype DIR ip here and path then-]/dir/hia-parsed.php|sed 's/<hr\/>/\n/g'|grep 'Success'|sed 's/.*.\/retitle.php/http:\/\/[-Enter your Hype DIR ip here and path then-]\/dir\/retitle.php/g;s/">.*//g'|while read URL; do curl -s "$URL" -o /dev/null ;done
+curl http://[-Enter your Hype DIR ip here and path then-]/dir/update_list.php -o /dev/null

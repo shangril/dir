@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head><title>Documentation for the Dir API</title></head>
+<body>
+<a href="./">DIR</a> &gt; Dir API documentation</>
+<h1>Dir API documentation</h1>
+HTTP api. All API commands are passed through HTTP GET parameter. <br/>API can be reached at ./api.php
+<h2>Overview</h2>
+the "c" parameter indicates the command passed. Other possible parameters are options for the command. <br/>
+API replies are text/plain, UTF-8 encoded, and line separator is UNIX-style \n<br/>
+<h2>Commands</h2>
+<ol>
+<li>
+<code>c=list</code><br/>
+As-is, will output any known websites' IP, followed by a space, followed by the listening port. Each entry is provided on a single line. BUT as-is it outputs exclusively the Dir entries that have a "Success" ping status. 
+<h3>Option for this command</h3>
+a second get parameter, called l, can be passed alongside c=list. 
+<ul>
+<li><code>l=m</code> will also output besides "Success" also sites that have a "Mixed" ping status</li>
+<li><code>l=f</code> will also output besides "Success" also sites that have a "Mixed" AND a "Failure" ping status</li>
+<li><code>l=a</code> will also output besides "Success" also sites that have a "Mixed" AND a "Failure" AND a "No ping attempted so far" ping status</li>
+</ul>
+</li>
+
+<li>
+<code>c=title</code><br/>
+Ouputs the title, as known by this Dir instance, of a particular site if listed by it. It takes two parameters, both mandatory: 
+<ul>
+<li><code>i=&lt;Cjdns IPv6 of the site for this query&gt;</code></li>
+<li><code>p=&lt;Port of the http server used by the above-provided site for this query&gt;</code></li>
+</ul>
+<li>
+<code>c=tags</code>
+Ouputs, one per line, each currenlty known, human-curated tag added to categorise a particular site on this Dir instance. I takes two parameters, both mandatory:
+<ul>
+<li><code>i=&lt;Cjdns IPv6 of the site for this query&gt;</code></li>
+<li><code>p=&lt;Port of the http server used by the above-provided site for this query&gt;</code></li>
+</ul>
+</li>
+</ol>
+<h2>Error codes</h2>
+In case of error the api outputs a blank, empty text file. 
+</body>
+</html>
