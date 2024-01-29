@@ -24,7 +24,8 @@ Cjdns, and therefore Hyperboria, can be used on any network medium supporting th
 
 Due to the mesh nature of this network, with peers relaying data from node to node, a worldwide network is then constituted. It is called Hyperboria.
 
-I clicked on the link and the site doesn't load
+I clicked on the link and the site doesn't load !
+
 It is likely to be normal if you are still not connected to Hyperboria. You will learn how to do so in the next section of this page.
 
 How to connect to Hyperboria
@@ -52,7 +53,7 @@ At this point you'll get your own cjdroute.conf text file available in the same 
 
 Launch it up
 
-Then, cjdns has to be launched, with admnistrator ("root") rights. Note that it reads and write 0 files, but needs administrator privilège, because it will create a "virtual network interface" called tun0 which will connect you to Hyperboria. This is done with the following command:
+Then, cjdns has to be launched, with administrator ("root") rights. Note that it reads and write 0 files, but needs administrator privilège, because it will create a "virtual network interface" called tun0 which will connect you to Hyperboria. This is done with the following command:
 
     Windows: cjdroute.exe < cjdroute.conf
     Other: cjdroute < cjdroute.conf
@@ -66,7 +67,7 @@ On UNIX-style machines, you'll have to configure your system's firewall to block
 Your link above still doesn't load!
 
 And that's because you setup Cjdns but are not peering with any other Hyperboria Cjdns node. Keep calm, public peering servers are waiting for you to join! Just see
-cjdns.ca/peers.txt for some of them, with their publickey. You can select one ore more, and just edit cjdroute.conf to paste the code block in the corresponding section called (IPv4 only) "connectTo": { for IPv4 peers of the form XXX.XXX.XXX.XXX:XXXXX where each X is a number.
+cjdns.ca/peers.txt for some of them, with their publickey. You can select one ore more, and just edit cjdroute.conf to paste the code block in the corresponding section called '(IPv4 only) "connectTo": {' for IPv4 peers of the form XXX.XXX.XXX.XXX:XXXXX where each X is a number.
 
 Then restart Cjdns ([CTRL]+C in the terminal window in which you launched it, to terminate it) and then, you are on Hype.
 
