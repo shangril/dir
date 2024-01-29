@@ -9,13 +9,15 @@ The following Hyperboria HOWTO courtesy of Crem Road records, under CC BY-SA
 What is Hyperboria
 Hyperboria is a virtual network, propelled by the Cjdns free software, fully end-to-end encrypted, with encryption-based addressing, used at a worldwide scale to provide to its users
 
-    A secure, trusted, privacy friendly network
-    which is untakedownable, resistant to censorship and to severely disruptive situations
+   A secure, trusted, privacy friendly network
+
+   which is untakedownable, resistant to censorship and to severely disruptive situations
 
 Cjdns is the software. It does the routing, relaying encrypted communication from node to node, to have them reaching their destination. It also does the encryption, making sure of the following:
 
-    Since the communications are end-to-end encrypted, no one relaying them can access or counterfeit them
-    Since addressing is encryption-based, it authenticates the source and the destination IP address: you are always sure that a particular address is for sure the one it's supposed to be
+   Since the communications are end-to-end encrypted, no one relaying them can access or counterfeit them
+
+   Since addressing is encryption-based, it authenticates the source and the destination IP address: you are always sure that a particular address is for sure the one it's supposed to be
 
 Cjdns, and therefore Hyperboria, can be used on any network medium supporting the common TCP/IP internet protocol. Then, it can be used through tunnels over internet, linking distant nodes all over the world. As well, it can be used over Local Are Network medium such as Wifi, Ethernet cable or BPL, to provide neighbour-to neighbour connectivity. In this case, the more the range extends, the more the range extends.
 
